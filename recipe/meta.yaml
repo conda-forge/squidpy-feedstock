@@ -48,6 +48,7 @@ requirements:
     - validators >=0.18.2
     - xarray >=0.16.1
     - zarr >=2.6.1
+    - spatialdata
   run_constrained:
     - napari >=0.4.14,<0.5
 
