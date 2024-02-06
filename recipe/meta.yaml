@@ -43,7 +43,6 @@ requirements:
     - statsmodels >=0.12.0
     - tifffile !=2022.4.22
     - tqdm >=4.50.2
-    - typing_extensions
     - validators >=0.18.2
     - xarray >=0.16.1
     - zarr >=2.6.1
