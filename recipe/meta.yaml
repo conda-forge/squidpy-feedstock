@@ -35,7 +35,7 @@ requirements:
     - numba >=0.56.4
     - numpy >=1.23.0
     - omnipath >=1.0.7
-    - pandas >=2.1.0
+    - pandas
     - Pillow >=8.0.0
     - scanpy >=1.9.3
     - scikit-image >=0.20
@@ -44,7 +44,7 @@ requirements:
     - tifffile !=2022.4.22
     - tqdm >=4.50.2
     - validators >=0.18.2
-    - xarray >=0.16.1
+    - xarray
     - zarr >=2.6.1
     - spatialdata >=0.0.15
   run_constrained:
