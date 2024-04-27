@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 683c58941b030c9daf4d46b441682dabe40e319cd54f86d28ff346f1983fc0fc
+  sha256: 485e48163b235af5b3d1cc06e3971ae848d0787c2958b5795200755a86dadf4f
 
 build:
   number: 0
@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python >=3.9
+    - pip
     - hatchling
     - hatch-vcs
   run:
@@ -30,22 +31,21 @@ requirements:
     - fsspec >=2021.11.0
     - leidenalg >=0.8.2
     - matplotlib-scalebar >=0.8.0
-    - matplotlib-base >=3.3.0,!=3.6.1
+    - matplotlib-base >=3.3.0
     - networkx >=2.6.0
     - numba >=0.56.4
     - numpy >=1.23.0
     - omnipath >=1.0.7
-    - pandas >=2.1.0
+    - pandas
     - Pillow >=8.0.0
     - scanpy >=1.9.3
-    - scikit-image >=0.19,<=0.20
+    - scikit-image >=0.20
     - scikit-learn >=0.24.0
     - statsmodels >=0.12.0
     - tifffile !=2022.4.22
     - tqdm >=4.50.2
-    - typing_extensions
     - validators >=0.18.2
-    - xarray >=0.16.1
+    - xarray >=2023.12.0
     - zarr >=2.6.1
     - spatialdata >=0.0.15
   run_constrained:
