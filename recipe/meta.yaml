@@ -1,5 +1,6 @@
 {% set name = "Squidpy" %}
 {% set version = "1.6.3" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - aiohttp >=3.8.1
     - anndata >=0.9
     - cycler >=0.11.0
@@ -47,7 +48,7 @@ requirements:
     - validators >=0.18.2
     - xarray >=2024.10.0
     - zarr >=2.6.1,<3.0.0 
-    - spatialdata >=0.2.5
+    - spatialdata >=0.2.3
 
 test:
   imports:
@@ -56,6 +57,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/scverse/squidpy
