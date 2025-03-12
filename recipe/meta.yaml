@@ -1,13 +1,13 @@
 {% set name = "Squidpy" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: e1d26bb14245f15c4d4a20ebf498763c8dee1195d93d56e00b244c514f686319
+  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: e3879868897d1b94bb21bc814fef00c5343053d7ae78c08ab3d68366a497e47e
 
 build:
   number: 0
