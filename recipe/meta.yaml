@@ -48,7 +48,7 @@ requirements:
     - validators >=0.18.2
     - xarray >=2024.10.0
     - zarr >=2.6.1,<3.0.0 
-    - spatialdata >=0.2.3
+    - spatialdata >=0.2.5
 
 test:
   imports:
