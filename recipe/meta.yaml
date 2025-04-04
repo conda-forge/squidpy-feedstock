@@ -1,5 +1,5 @@
 {% set name = "Squidpy" %}
-{% set version = "1.6.4" %}
+{% set version = "1.6.5" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: e3879868897d1b94bb21bc814fef00c5343053d7ae78c08ab3d68366a497e47e
+  sha256: c5f9449cde5829c2d916f56c210a62e110fea44d4839951007aa2abb59c4ca21
 
 build:
   number: 0
@@ -30,7 +30,6 @@ requirements:
     - dask[array] >=2021.02.0,<=2024.11.2
     - docrep >=0.3.1
     - fsspec >=2021.11.0
-    - leidenalg >=0.8.2
     - matplotlib-scalebar >=0.8.0
     - matplotlib-base >=3.3.0
     - networkx >=2.6.0
@@ -47,7 +46,7 @@ requirements:
     - tqdm >=4.50.2
     - validators >=0.18.2
     - xarray >=2024.10.0
-    - zarr >=2.6.1,<3.0.0 
+    - zarr >=2.6.1,<3.0.0
     - spatialdata >=0.2.5
 
 test:
